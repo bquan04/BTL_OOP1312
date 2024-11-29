@@ -21,26 +21,16 @@
 				<span></span>
 
 			</div>
-			<div class="form-group valid">
+			<div class="form-group valid pass-control">
 				<label >Mật Khẩu</label>
-				<div class="controller">
-					<div class="input-group mb-3" style="margin: 0; padding: 0">
-						<input type="password" class="form-control" value="${password}" name="password"
-							aria-label="Recipient's username" id="password-field" required="required"
-							aria-describedby="button-addon2 " placeholder="Nhập mật khẩu">
-						<div class="input-group-append">
-							<button class="btn btn-light" type="button"
-								id="button-addon2">
-								<i class='bx bx-show-alt'></i>
-							</button>
-						</div>
-					</div>
-					<span></span>
-				</div>
+				<input id = "password" type="password" class="form-control" value="${password}" name="password"
+					aria-label="Recipient's username" id="password-field" required="required"
+					aria-describedby="button-addon2 " placeholder="Nhập mật khẩu">
+				<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('password', this)"></i>
 			</div>
 			<div class="form-group form-check">
-				<input type="checkbox" name="rememberLogin" value="true" class="form-check-input" id="exampleCheck1">
-				<label for="exampleCheck1" >Nhớ tài khoản?</label>
+				<input type="checkbox" name="rememberLogin" value="true" class="form-check-input">
+				<label>Nhớ tài khoản?</label>
 			</div>
 			<hr>
 
@@ -52,5 +42,19 @@
 		<p style="text-align: center; color: red">${message}</p>
 	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
+	<script>
+	function togglePassword(inputId, button) {
+           const passwordField = document.getElementById(inputId);
+           if (passwordField.type === "password") {
+               passwordField.type = "text";
+               button.classList.remove("fa-eye-slash");
+               button.classList.add("fa-eye");
+           } else {
+               passwordField.type = "password";
+               button.classList.remove("fa-eye");
+               button.classList.add("fa-eye-slash");
+           }
+       }
+	</script>
 </body>
 </html>

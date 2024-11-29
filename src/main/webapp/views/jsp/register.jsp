@@ -9,6 +9,26 @@
 <meta charset="UTF-8">
 <title>Register</title>
 <script src="https://kit.fontawesome.com/273264477c.js" crossorigin="anonymous"></script>
+<style>
+.pass-control {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.pass-control .showPassBtn {
+	position: absolute;
+    top: 26%;
+    right: 4px;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+    transition: .3s ease all;
+}
+
+.pass-control .showPassBtn:hover {
+	color: #fa6675;
+}
+</style>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
@@ -30,7 +50,7 @@
 					 	placeholder="Nhập tên tài khoản"> 
 				</div>
 
-				<div class="form-group valid">
+				<div class="form-group valid pass-control">
 					<label>Mật Khẩu</label>
 					<div class="controller">
 						<div class="input-group mb-3" style="margin: 0; padding: 0">
@@ -38,30 +58,21 @@
 								required aria-label="Recipient's username" id="password-field"
 								aria-describedby="button-addon2 " placeholder="Nhập mật khẩu"
 								>
-							<div class="input-group-append">
-								<button class="btn btn-light" type="button" id="button-addon2">
-									<i class='bx bx-show-alt'></i>
-								</button>
-							</div>
-
+							<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('password-field', this)"></i>
 						</div>
 						
 					</div>
 
 				</div>
-				<div class="form-group valid">
+				<div class="form-group valid pass-control">
 					<label>Xác Nhận Mật Khẩu</label>
 					<div class="controller">
 						<div class="input-group mb-3" style="margin: 0; padding: 0">
 							<input type="password" class="form-control pass" name="confirm"
 								required aria-label="Recipient's username"
 								id="confirm-field" aria-describedby="button-addon3"
-								placeholder="Nhập xác nhận mật khẩu">
-							<div class="input-group-append">
-								<button class="btn btn-light" type="button" id="button-addon3">
-									<i class='bx bx-show-alt'></i>
-								</button>
-							</div>
+								placeholder="Xác nhận mật khẩu">
+							<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('confirm-field', this)"></i>
 						</div>
 					</div>
 				</div>
@@ -89,5 +100,19 @@
 		</div>
 	</div>
 	<jsp:include page="footer.jsp"></jsp:include>
+	<script>
+	function togglePassword(inputId, button) {
+           const passwordField = document.getElementById(inputId);
+           if (passwordField.type === "password") {
+               passwordField.type = "text";
+               button.classList.remove("fa-eye-slash");
+               button.classList.add("fa-eye");
+           } else {
+               passwordField.type = "password";
+               button.classList.remove("fa-eye");
+               button.classList.add("fa-eye-slash");
+           }
+       }
+	</script>
 </body>
 </html>

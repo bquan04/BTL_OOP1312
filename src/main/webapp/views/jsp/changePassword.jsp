@@ -44,49 +44,49 @@
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	<div class="container-fluid" style="width: 60%; margin-top: 60px;">
-			<h2>Đổi Mật Khẩu</h2>
-			<hr>
-			<form action="change-pass" method="post">
-				<div class="form-group pass-control">
-					<label for="InputEmail1">Mật Khẩu Hiện Tại</label> 
-					<input id = "current-password" type="password" class="form-control show_password" required="required"
-							value="${oldPass}"name="oldPass">
-					<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('current-password', this)"></i>
-					<span class = "err-warning">${oldPassErr}</span>
-				</div>
-				<div class="form-group pass-control">
-					<label for="exampleInputEmail1">Mật Khẩu Mới</label> 
-					<input id = "new-password" type="password" class="form-control show_password" required="required"
-							value="${newPass}" name="newPass"> 
-					<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('new-password', this)"></i>
-					<span class = "err-warning">${newPassErr}</span>
-				</div>
-				<div class="form-group pass-control">
-					<label for="exampleInputEmail1">Xác Nhận Mật Khẩu Mới</label> 
-					<input id = "comfirm-password" type="password" class="form-control show_password" required="required"
-							value="${confirmPass}" name="comfirmPass">
-					<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('comfirm-password', this)"></i>
-					<span class = "err-warning">${comfirmPassErr}</span>
-				</div>
-				<div style="display: flex; justify-content: end; margin-top: 8px">
-					<button class="btn btn-dark">Lưu Thay Đổi</button>
-				</div>
-			</form>
-			<p style="color: #D21312">${error}</p>
-		</div>
-		<script>
-		function togglePassword(inputId, button) {
-            const passwordField = document.getElementById(inputId);
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                button.classList.remove("fa-eye-slash");
-                button.classList.add("fa-eye");
-            } else {
-                passwordField.type = "password";
-                button.classList.remove("fa-eye");
-                button.classList.add("fa-eye-slash");
-            }
-        }
-		</script>
+		<h2>Đổi Mật Khẩu</h2>
+		<hr>
+		<form action="change-pass" method="post">
+			<div class="form-group pass-control">
+				<label for="InputEmail1">Mật Khẩu Hiện Tại</label> 
+				<input id = "current-password" type="password" class="form-control show_password" required="required"
+						value="${oldPass}"name="oldPass">
+				<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('current-password', this)"></i>
+				<span class = "err-warning">${oldPassErr}</span>
+			</div>
+			<div class="form-group pass-control">
+				<label for="exampleInputEmail1">Mật Khẩu Mới</label> 
+				<input id = "new-password" type="password" class="form-control show_password" required="required"
+						value="${newPass}" name="newPass"> 
+				<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('new-password', this)"></i>
+				<span class = "err-warning">${newPassErr}</span>
+			</div>
+			<div class="form-group pass-control">
+				<label for="exampleInputEmail1">Xác Nhận Mật Khẩu Mới</label> 
+				<input id = "comfirm-password" type="password" class="form-control show_password" required="required"
+						value="${confirmPass}" name="comfirmPass">
+				<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('comfirm-password', this)"></i>
+				<span class = "err-warning">${comfirmPassErr}</span>
+			</div>
+			<div style="display: flex; justify-content: end; margin-top: 8px">
+				<button class="btn btn-dark">Lưu Thay Đổi</button>
+			</div>
+		</form>
+		<p style="color: #D21312">${error}</p>
+	</div>
+	<script>
+	function togglePassword(inputId, button) {
+           const passwordField = document.getElementById(inputId);
+           if (passwordField.type === "password") {
+               passwordField.type = "text";
+               button.classList.remove("fa-eye-slash");
+               button.classList.add("fa-eye");
+           } else {
+               passwordField.type = "password";
+               button.classList.remove("fa-eye");
+               button.classList.add("fa-eye-slash");
+           }
+       }
+	</script>
 </body>
 </html>

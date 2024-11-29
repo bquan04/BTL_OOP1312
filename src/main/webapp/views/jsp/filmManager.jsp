@@ -78,7 +78,7 @@
 											style="white-space: nowrap; overflow: hidden;">${item.getFilmName() }
 										</h3>
 										
-										<div style="font-size: 18px; display: flex; justify-content: left; margin-bottom: 10px; align-items: center;">
+										<div style="font-size: 15px; display: flex; justify-content: left; margin-bottom: 10px; align-items: center;">
 											<span style="padding-right: 10px;"><i class="fa-solid fa-eye"></i>${item.getTotalViews() }</span>
 											<span><i class="fa-solid fa-heart"></i>${item.getTotalFavorites()}</span>
 											

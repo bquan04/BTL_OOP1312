@@ -33,7 +33,7 @@
 		</div>
 		
 		<h2>
-			<a href="HomePageController?page=1&genre=1" style = "text-decoration: none; display: block;">Phim Mới Cập Nhật</a>
+			<a href="#" style = "text-decoration: none; display: block;">Phim Mới Cập Nhật</a>
 		</h2>
 		<div class = "row">
 			<c:forEach var="item" items="${lastestEpUploadedList}">
@@ -57,7 +57,7 @@
 			</c:forEach>
 		</div>
 		<h2>
-			<a href="HomePageController?page=1&genre=1" style = "text-decoration: none; display: block;">Tất Cả Phim</a>
+			<a href="#" style = "text-decoration: none; display: block;">Tất Cả Phim</a>
 		</h2>
 		<div class = "row">
 			<c:forEach var="item" items="${recentFilmList}">
