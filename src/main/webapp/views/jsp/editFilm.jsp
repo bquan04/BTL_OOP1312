@@ -30,7 +30,7 @@
 				<div class="form-group">
 					<label for="exampleInputPassword1">Ảnh Bìa</label> <br> 
 					<img id="avatar" src="/Animed/images/film_posters/${film.getPoster()}" alt=""
-						style="width: 100px; height: 150px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
+						style="width: 150px; height: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
 					<br> <br> 
 					<input id="poster-input" type="file" value="Chọn Ảnh" accept=".jpg,.png" 
 						onchange="loadFile()" name="imgPoster">
@@ -105,7 +105,7 @@
 							<div class="form-group">
 								<label for="exampleInputPassword1">Ảnh Bìa</label> <br> 
 								<img id="avatar" src="/Animed/images/episode_thumbnails/${episode.getThumbnail()}" alt=""
-									style="width: 100px; height: 150px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
+									style="width: 150px; height: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
 								<br> <br> 
 								<input id="thumbnail-input" type="file" value="Chọn Ảnh Đại Diện" accept=".jpg,.png" 
 									onchange="" name="episodeThumbnail">
@@ -179,7 +179,7 @@
 									<div class="form-group">
 										<label for="exampleInputPassword1">Ảnh Bìa</label> <br> 
 										<img id="avatar" src="/Animed/images/episode_thumbnails/${item.getThumbnail()}" alt=""
-											style="width: 100px; height: 150px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
+											style="width: 150px; height: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
 										<br> <br> 
 										<input id="thumbnail-input" type="file" value="Chọn Ảnh" accept=".jpg,.png" 
 											onchange="" name="episodeThumbnail">

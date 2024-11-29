@@ -47,7 +47,7 @@
 								<option value="-1" selected="selected">Tất Cả</option>
 								<c:forEach var="item" items="${genreList}">
 									<option value="${item.getGenreID()}"
-										${item.getGenreID() == checkGenre?'selected':'' }>${item.getGenreName()}</option>
+										${item.getGenreID() == checkGenreHeader?'selected':'' }>${item.getGenreName()}</option>
 								</c:forEach>
 							</select>
 						</div>
