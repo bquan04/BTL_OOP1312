@@ -1,0 +1,773 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--fontSize: 1.4rem;
+	--color-dark: #000000;
+	--bg-gradient: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+}
+
+.apps {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Header */
+.titlewep {
+	font-size: 2rem;
+	color: rgb(128, 255, 255);
+	font-weight: bold;
+	font-style: italic;
+}
+
+.navs a {
+	font-size: 15px;
+}
+
+.navs a:hover {
+	transform: scale(1.05);
+	transition: all linear 0.5s;
+	color: #66347F;
+}
+
+.header {
+	font-size: 1.4rem;
+}
+
+.header-search {
+	height: 100px;
+}
+
+/* video banner*/
+.video-banner {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.video-banner video {
+	margin: 0 auto;
+	width: 90%;
+	height: auto;
+	border-radius: 20px;
+}
+
+h2 {
+	margin-top: 15px;
+	margin-left: 0;
+	color: #fa6675;
+	font-weight: bold;
+	
+}
+
+h1 {
+	color: #fa6675;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.line {
+	width: 150px;
+	line-height: 10px;
+	background-color: white;
+	margin: 15px auto;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.line a {
+	width: 100%;
+}
+
+.line a i {
+	width: 100%;
+	font-size: 15px;
+	color: black;
+}
+
+/* card*/
+.card:hover {
+	transition: all linear 0.5s;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.boxHover:hover {
+	display: block;
+}
+
+.boxHover {
+	display: none;
+}
+
+.boxHover:hover {
+	display: block;
+}
+
+.card h5 {
+	font-weight: bold;
+	color: black;
+}
+
+.card .card-img-top {
+	height: 250px;
+}
+
+.card i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+
+.card i:hover {
+	transition: all linear 0.5s;
+	transform: scale(1.3);
+	color: #fa6675;
+}
+
+.card a i {
+	font-size: 15px;
+}
+
+.card {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+/* Đăng Kí */
+.register {
+	width: 60%;
+	margin: 15px auto;
+	background-color: rgba(0, 0, 0, 0.04);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.col-form-label {
+	color: #fa6675;
+	font-weight: bold;
+}
+
+/* footer*/
+.iconfooter {
+	font-size: 30px;
+}
+
+.fb {
+	color: #3b5998;
+}
+
+.tw {
+	color: #1da1f2;
+}
+
+.ytb {
+	color: #ff0000;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.flex-column a {
+	color: black;
+}
+
+.fb .tw .ytb {
+	margin-right: 100px;
+}
+
+/* detail Movie */
+.ContentDetail {
+	margin-left: 10px;
+}
+
+.ContentDetail h5 {
+	margin: 10px;
+}
+
+.reportvideo span {
+	font-size: 40px;
+	margin: 5px;
+}
+
+.reportvideo span:hover {
+	transform: scale(1.05);
+	color: white;
+	transition: all linear 0.5s;
+}
+/*  report*/
+.star {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.star span {
+	font-size: 30px;
+}
+
+/* Favorite and user */
+.banneruser {
+	border-radius: 20px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	height: 300px;
+	display: flex;
+	align-items: end;
+	padding: 10px;
+	background-size: 100%;
+}
+
+.avtuser {
+	width: 50%;
+	height: auto;
+	margin-left: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.avtuser img {
+	width: 40%;
+	border-radius: 100%;
+}
+
+.infor {
+	font-size: 15px;
+}
+
+.contentinfor {
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*Quan lý video */
+.styleChoose {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.styleChoose div {
+	margin-right: 10px;
+}
+
+.adminrow .col-md-3 {
+	margin-bottom: 20px;
+}
+/*Quan lý tai khoản */
+tr {
+	text-align: center;
+}
+
+td span {
+	font-size: 30px;
+}
+
+td img {
+	width: 100px;
+	border-radius: 5px;
+}
+
+/* Feedback*/
+.media .trash {
+	font-size: 30px;
+}
+
+.media .check {
+	color: red;
+}
+
+.media .checks {
+	color: green;
+}
+
+/* thống kê */
+.statistical {
+	width: 90%;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+.statistical img {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.statistical label {
+	color: white;
+}
+
+.statistical h3:hover {
+	transform: scale(1.05);
+	transition: all linear .5s;
+}
+/* pay */
+.contentdialog {
+	width: auto;
+	width: 1000px;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.pay {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.pay>div {
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	margin: 10px;
+	width: 45%;
+}
+
+.pay>div:hover {
+	transform: scale(1.02);
+	transition: all linear .5s;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pay h3 {
+	margin-bottom: 10px;
+}
+
+.pay a {
+	border-radius: 10px;
+}
+/* form edit account */
+.formeditaccount {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.formeditaccount .editinfor div {
+	margin-bottom: 1rem;
+}
+
+.formeditaccount>div {
+	margin-bottom: 20px;
+}
+/* add video */
+.formaddvideo {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*personlikevideo */
+.personlikevideo tr img {
+	width: 100px;
+}
+
+
+.episode-thumbnail {
+	height:100px;
+}
+
+/*THANH ĐIỀU HƯỚNG*/
+
+.nav-link {
+    transition: all 0.3s ease; /* Hiệu ứng hover mượt */
+}
+
+.nav-link:hover {
+    color: #fa6675; /* Màu đỏ đậm hơn khi hover */
+}
+
+.navbar-brand span {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand span:hover {
+    color: #fa6675;
+}
+
+.btn-danger {
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #fa6675; /* Màu đỏ hơn khi hover */
+}
+
+.form-control {
+    border-radius: 5px; /* Bo tròn thanh tìm kiếm */
+}
+
+.modal-content {
+    border-radius: 5px; /* Bo tròn hộp đăng nhập */
+}
+
+
+/* PHẦN TRANG CHÍNH*/
+
+/* Giới hạn chiều rộng của carousel để căn giữa */
+#myCarousel {
+    margin-top: 20px; /* Khoảng cách phía trên */
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Đặt chiều rộng tối đa cho ảnh */
+.carousel-inner img {
+    max-width: 100%; /* Giới hạn ảnh chiếm 100% chiều rộng của carousel */
+    max-height: 600px; /* Giới hạn chiều cao tối đa của ảnh (tùy chỉnh theo nhu cầu) */
+    margin: 0 auto; /* Căn giữa ảnh trong carousel */
+}
+
+/* Điều chỉnh icon điều khiển */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*TẬP MỚI NHẤT */
+
+/* Thêm khoảng cách hai bên */
+.latest-episodes-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Giới hạn chiều rộng tối đa và căn giữa */
+.latest-episodes {
+    max-width: 1200px; /* Giới hạn chiều rộng (có thể điều chỉnh) */
+    margin: 0 auto;    /* Căn giữa */
+}
+/* Section Title Styling */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.section-title a {
+    color: #fa6675; /* Màu chữ đỏ mặc định */
+    text-decoration: none; /* Bỏ gạch chân */
+    padding: 5px 10px; /* Tạo khoảng cách giữa chữ và viền */
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt */
+  }
+  
+  .section-title a:hover {
+    color: #fa6675; /* Đổi màu chữ khi hover (trắng) */
+    background-color: #ffffff; /* Đổi màu nền bao quanh */
+    border-radius: 5px; /* Bo góc bao quanh */
+    box-shadow: 0px 0px 5px rgb(240, 0, 0); /* Hiệu ứng đổ bóng màu đỏ */
+  }
+  
+
+/* Card Container Styling */
+.card-container {
+    gap: 15px;
+    display: flex;
+    justify-content: start; /* Để căn trái nội dung */
+    flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+    width: 100%; /* Điều chỉnh chiều rộng của mỗi card */
+    border: none;
+}
+
+/* Card Image Styling */
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Card Title & Text Hover Effect */
+.card-title {
+    margin-top: 5px;
+    color: #fa6675;
+}
+
+.card-title:hover {
+    color: #fa6675; /* Đổi sang màu đỏ khi di chuột */
+}
+
+.card-text {
+    color: #fa6675; /* Màu chữ phụ */
+    font-size: 0.9rem;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.card-text:hover {
+    color: #fa6675; /* Đổi sang màu đỏ khi di chuột */
+}
+
+/* General Styling for Section */
+.latest-episodes {
+    background-color: #fff; /* Nền trắng */
+    padding: 20px 0;
+}
+
+/*ANIME MOVIE*/
+
+/* Bố cục chính */
+.movie-section {
+    max-width: 1200px; /* Giới hạn chiều rộng */
+    margin: 0 auto;    /* Căn giữa phần nội dung */
+    padding: 20px;
+    text-align: left;  /* Căn trái cho tiêu đề */
+  }
+
+  .movie-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fa6675; /* Màu đỏ cho tiêu đề */
+    margin-bottom: 20px;
+  }
+  .movie-section a {
+    color: #fa6675; /* Màu chữ đỏ mặc định */
+    text-decoration: none; /* Bỏ gạch chân */
+    padding: 5px 10px; /* Tạo khoảng cách giữa chữ và viền */
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt */
+  }
+  
+  .movie-section a:hover {
+    color: #fa6675; /* Đổi màu chữ khi hover (trắng) */
+    background-color: #ffffff; /* Đổi màu nền bao quanh */
+    border-radius: 5px; /* Bo góc bao quanh */
+    box-shadow: 0px 0px 5px  rgb(240, 0, 0); /* Hiệu ứng đổ bóng màu đỏ */
+  }
+  
+
+  .movie-slider {
+    display: flex;
+    gap: 1rem;        /* Khoảng cách giữa các mục */
+    overflow-x: auto; /* Cuộn ngang nếu nội dung quá nhiều */
+    padding-bottom: 10px;
+  }
+
+  /* Các item phim */
+  .movie-item {
+    flex: 0 0 200px;  /* Định chiều rộng cố định cho từng mục */
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .movie-item img {
+    width: 100%;
+    height: 150px;    /* Điều chỉnh chiều cao hình ảnh */
+    object-fit: cover;
+    border-radius: 5px; /* Bo góc cho hình ảnh */
+    transition: transform 0.3s ease;
+  }
+
+  .movie-item:hover img {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+  }
+
+  .movie-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529; /* Màu đen chữ */
+    transition: color 0.3s ease;
+  }
+
+  .movie-item:hover p {
+    color: #dc3545; /* Màu đỏ khi hover */
+  }
+
+  /* Các item phim */
+  .daylist-item {
+    flex: 0 0 200px;  /* Định chiều rộng cố định cho từng mục */
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .daylist-item img {
+    width: 100%;
+    height: 300px;    /* Điều chỉnh chiều cao hình ảnh */
+    object-fit: cover;
+    border-radius: 5px; /* Bo góc cho hình ảnh */
+    transition: transform 0.3s ease;
+  }
+
+  .daylist-item:hover img {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+  }
+
+  .daylist-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529; /* Màu đen chữ */
+    transition: color 0.3s ease;
+  }
+
+  .daylist-item:hover p {
+    color: #fa6675; /* Màu đỏ khi hover */
+  }
+  
+.home-films__item {
+	position: relative;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    height: 164px;
+}
+
+.home-films__item img{
+    transition: transform 0.3s ease;
+}
+
+.home-films__item:hover img{
+    transform: scale(1.1);
+}
+
+.home-films__item-info {
+	position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient( 160deg, #fa6675 -240%, transparent 60%);
+    display: flex;
+    justify-content: center;
+}
+
+.home-films__item-name {
+    position: absolute;
+    top: calc(100% - 44px);
+    display: block;
+    text-align: center;
+    padding: 0 8px;
+    width: calc(100% - 8px);
+    line-height: 3.2rem;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    background-color: #fa6675;
+    border-radius: 5px;
+    opacity: 0.9;  
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    height: 3.2rem;
+}
+
+.home-films__item-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.home-films__item-episode {
+	position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.1rem;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.home-films__item-views {
+	position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #ffd64d;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+  /*TẤT CẢ ANIME style NHƯ TẬP MỚI NHẤT*/
+
+
+  /*PAGINATION*/
+  .pagination .page-link {
+    background-color: #fa6675; /* Nền đỏ */
+    color: white; /* Chữ màu trắng */
+    border: none; /* Bỏ viền */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+}
+
+.pagination .page-link:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng khi hover */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #fa6675; /* Màu đỏ đậm hơn cho nút active */
+    border: none; /* Bỏ viền */
+}
+
+
+/*CHÂN TRANG*/
+.custom-footer {
+  background-color: white; /* Màu nền trắng */
+  padding: 20px 0; /* Khoảng trắng trên và dưới là 20px */
+}
+
+
+/*CHÍNH SÁCH*/
+.custom-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fa6675;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fa6675;
+  margin-top: 20px;
+}
+
+.content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
