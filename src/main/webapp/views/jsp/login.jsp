@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Đăng Nhập</title>
+<title>Animed</title>
 <script src="https://kit.fontawesome.com/273264477c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
 				<input id = "password" type="password" class="form-control" value="${password}" name="password"
 					aria-label="Recipient's username" id="password-field" required="required"
 					aria-describedby="button-addon2 " placeholder="Nhập mật khẩu">
-				<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('password', this)"></i>
+				<i class="fa-regular fa-eye-slash showPassBtn" style = "top: 40%;" onclick = "togglePassword('password', this)"></i>
 			</div>
 			<div class="form-group form-check">
 				<input type="checkbox" name="rememberLogin" value="true" class="form-check-input">
@@ -41,7 +41,6 @@
 		<p style="text-align: center; color: red">${check}</p>
 		<p style="text-align: center; color: red">${message}</p>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 	<script>
 	function togglePassword(inputId, button) {
            const passwordField = document.getElementById(inputId);

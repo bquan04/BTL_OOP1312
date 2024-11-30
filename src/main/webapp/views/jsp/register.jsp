@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Register</title>
+<title>Animed</title>
 <script src="https://kit.fontawesome.com/273264477c.js" crossorigin="anonymous"></script>
 <style>
 .pass-control {
@@ -50,31 +50,20 @@
 					 	placeholder="Nhập tên tài khoản"> 
 				</div>
 
-				<div class="form-group valid pass-control">
+				<div class="form-group valid pass-control" style = "padding: 0;">
 					<label>Mật Khẩu</label>
-					<div class="controller">
-						<div class="input-group mb-3" style="margin: 0; padding: 0">
-							<input type="password" class="form-control pass" name="password" value="${person.getPass()}"
-								required aria-label="Recipient's username" id="password-field"
-								aria-describedby="button-addon2 " placeholder="Nhập mật khẩu"
-								>
-							<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('password-field', this)"></i>
-						</div>
-						
-					</div>
-
+					<input type="password" class="form-control pass" name="password" value="${person.getPass()}"
+						required aria-label="Recipient's username" id="password-field"
+						aria-describedby="button-addon2 " placeholder="Nhập mật khẩu">
+					<i class="fa-regular fa-eye-slash showPassBtn" style = 'top: 43%;' onclick = "togglePassword('password-field', this)"></i>
 				</div>
-				<div class="form-group valid pass-control">
+				<div class="form-group valid pass-control" style = "padding: 0;">
 					<label>Xác Nhận Mật Khẩu</label>
-					<div class="controller">
-						<div class="input-group mb-3" style="margin: 0; padding: 0">
-							<input type="password" class="form-control pass" name="confirm"
-								required aria-label="Recipient's username"
-								id="confirm-field" aria-describedby="button-addon3"
-								placeholder="Xác nhận mật khẩu">
-							<i class="fa-regular fa-eye-slash showPassBtn" onclick = "togglePassword('confirm-field', this)"></i>
-						</div>
-					</div>
+					<input type="password" class="form-control pass" name="confirm"
+						required aria-label="Recipient's username"
+						id="confirm-field" aria-describedby="button-addon3"
+						placeholder="Xác nhận mật khẩu">
+					<i class="fa-regular fa-eye-slash showPassBtn" style = 'top: 43%;' onclick = "togglePassword('confirm-field', this)"></i>
 				</div>
 
 				<div class="form-group valid">
@@ -87,7 +76,7 @@
 				<div class="form-group valid">
 					<label for="exampleInputEmail1">Email</label> 
 					<input type="email" required ng-model="email" class="form-control" name="email" 
-					value="${person.getEmail() }" placeholder="Nhập email "> 
+						value="${person.getEmail() }" placeholder="Nhập email "> 
 				</div>
 				<p>${errorUsername }</p>
 				<div class="controller" style="text-align: center;">
@@ -99,7 +88,6 @@
 
 		</div>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 	<script>
 	function togglePassword(inputId, button) {
            const passwordField = document.getElementById(inputId);

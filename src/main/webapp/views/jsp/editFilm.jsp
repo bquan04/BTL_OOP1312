@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thêm Phim Mới</title>
+<title>Animed</title>
 <%@ include file="/views/common/cssboostrap.jsp"%>
 </head>
 <body>
@@ -229,7 +229,6 @@
 			</c:if>
 		</div>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 	<script type="text/javascript">
 		var defaultAvatar = "/Animed/src/main/webapp/images/${film.getPoster()}";
 		var id = document.getElementById("poster-input");

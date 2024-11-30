@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Animed</title>
 <%@ include file="/views/common/cssboostrap.jsp"%>
 </head>
 <body>
@@ -37,7 +37,7 @@
 			      	 </a>
 			      </td>
 			      <td>
-			      	<a style = "color: red" href = '<c:url value="/delete-favorite?filmid=${item.getFilmID()}&personid=${currentPerson.personID}"></c:url>'>
+			      	<a style = "color: red; text-decoration: none;" href = '<c:url value="/delete-favorite?filmid=${item.getFilmID()}&personid=${currentPerson.personID}"></c:url>'>
 			      		<i class = "ti-trash"></i>
 			      	</a>
 			      </td>

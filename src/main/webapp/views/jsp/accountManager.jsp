@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Animed</title>
 <%@ include file="/views/common/cssboostrap.jsp"%>
 <script src="https://kit.fontawesome.com/273264477c.js" crossorigin="anonymous"></script>
 </head>
@@ -146,6 +146,5 @@
 				</tbody>
 		</table>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

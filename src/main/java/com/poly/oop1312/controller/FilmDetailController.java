@@ -103,6 +103,7 @@ public class FilmDetailController extends HttpServlet {
 		request.setAttribute("film", film);
 		request.setAttribute("episodeList", episodeList);
 		request.setAttribute("episode", episode);
+		request.setAttribute("watchingEpID", episodeid);
 		List<Film> sameGenreFilmList = filmDAO.findAllByGenre(film.getGenre().getGenreID());
 		
 		if(person != null) {

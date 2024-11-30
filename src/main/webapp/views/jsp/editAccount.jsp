@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edit Account</title>
+<title>Animed</title>
 <%@ include file="/views/common/cssboostrap.jsp"%>
 </head>
 <body>
@@ -16,7 +16,7 @@
 	<div class="apps" id="actionMovie"
 		style="width: 100%; margin: 20px auto;">
 		<div class="container" style="margin-top: 60px;">
-			<h2>Chỉnh Sủa Thông Tin</h2>
+			<h2>Chỉnh Sửa Thông Tin</h2>
 			<hr>
 			<form action="edit-account" class="formeditaccount row" method="post"  enctype="multipart/form-data">
 				<div class="col-md-3">
@@ -73,7 +73,6 @@
 			<p>${errorUsername}</p>
 		</div>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 	<%@ include file="/views/common/jsboostrap.jsp"%>
 	<script type="text/javascript">
 		var defaultAvatar = "images/${user.getAvatar()}";

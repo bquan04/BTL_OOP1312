@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Animed</title>
 <%@ include file="/views/common/cssboostrap.jsp"%>
 </head>
 <body>

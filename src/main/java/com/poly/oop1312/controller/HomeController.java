@@ -59,6 +59,7 @@ public class HomeController extends HttpServlet {
 		request.setAttribute("inputTxt", name);
 		request.setAttribute("checkGenreHeader", genreid);
 		request.setAttribute("filmList", filmList);
+		request.setAttribute("genreList", genreList);
 		request.getRequestDispatcher("/views/jsp/searchFilm.jsp").forward(request, response);
 	}
 	

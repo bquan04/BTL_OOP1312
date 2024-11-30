@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Animed</title>
 <link rel="stylesheet" type="text/css" href="/Animed/src/main/webapp/views/css/style.css">
 <%@ include file="/views/common/cssboostrap.jsp"%>
 </head>
@@ -47,11 +47,22 @@
                 <ul class="list-group overflow-auto">
                     <c:forEach var="item" items="${episodeList}">
                     	<li>
-                    		<a href='<c:url value="/film-detail?action=watch&filmid=${film.getFilmID()}&episodeid=${item.getEpisodeID()}"></c:url>' 
-                    			class="list-group-item list-group-item-action" data-video-url="https://www.youtube.com/embed/VIDEO_ID_1">
-		                        <img class = "episode-thumbnail" src="/Animed/images/episode_thumbnails/${item.getThumbnail()}" alt="${item.getEpisodeName()}">
-		                        <p>${item.getEpisodeName()}</p>
-		                    </a>
+	                    	<c:choose>
+	                    		<c:when test = "${item.getEpisodeID() == watchingEpID}">
+	                    			<a style = "background-color: #ffcccc; color: #fa6675; border-color: red;" href='<c:url value="/film-detail?action=watch&filmid=${film.getFilmID()}&episodeid=${item.getEpisodeID()}"></c:url>' 
+		                    			class="list-group-item list-group-item-action">
+				                        <img class = "episode-thumbnail" src="/Animed/images/episode_thumbnails/${item.getThumbnail()}" alt="${item.getEpisodeName()}">
+				                        <p>${item.getEpisodeName()}</p>
+				                    </a>
+	                    		</c:when>
+	                    		<c:otherwise>
+		                    		<a href='<c:url value="/film-detail?action=watch&filmid=${film.getFilmID()}&episodeid=${item.getEpisodeID()}"></c:url>' 
+		                    			class="list-group-item list-group-item-action" data-video-url="https://www.youtube.com/embed/VIDEO_ID_1">
+				                        <img class = "episode-thumbnail" src="/Animed/images/episode_thumbnails/${item.getThumbnail()}" alt="${item.getEpisodeName()}">
+				                        <p>${item.getEpisodeName()}</p>
+				                    </a>
+	                    		</c:otherwise>
+	                    	</c:choose>
                     	</li>
                     </c:forEach>
                     
